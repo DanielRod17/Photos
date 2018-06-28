@@ -5,9 +5,13 @@
              x:Class="Photos.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="TakePictureButton"
+                    Clicked="TakePictureButton_Clicked"
+                    Text= "Take from camera"/>
+            <Button x:Name="UploadPictureButton"
+                    Clicked="UploadPictureButton_Clicked"
+                    Text="Pick a photo"/>
+            <Image x:Name="Image1" HeightRequest="240" BackgroundColor="Azure"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
